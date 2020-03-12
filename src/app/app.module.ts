@@ -4,9 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { SignaturePanel } from 'src/_component/signature-panel/signature-panel.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignaturePanel
   ],
   imports: [
     BrowserModule,
