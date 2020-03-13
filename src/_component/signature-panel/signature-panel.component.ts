@@ -4,7 +4,7 @@ import { Component, Input, ViewChild, OnInit, HostListener } from '@angular/core
 @Component({
   selector: 'app-signature-panel',
   templateUrl: './signature-panel.component.html',
-  styles:   ['./signature-panel.component.scss']
+  styleUrls:   ['./signature-panel.component.scss']
 })
 export class SignaturePanel implements OnInit {
   @Input() name: string;
@@ -12,7 +12,7 @@ export class SignaturePanel implements OnInit {
   sigPadElement;
   context;
   isDrawing = false;
-  img; 
+  img;  
 
   ngOnInit() {
     this.sigPadElement = this.sigPad.nativeElement;
