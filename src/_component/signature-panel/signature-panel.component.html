@@ -1,10 +1,9 @@
 <br/><br/><br/><br/>
-<canvas class="box" #sigPad width="300" height="150" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></canvas>
+<canvas class="box" #sigPad (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)"></canvas>
 <br/> 
 <button (click)="clear()">clear</button>
 <button (click)="save()">save</button>
-<br/>
-<div *ngIf='img'><img [src]="img"></div>
+<br/><img *ngIf='img' class="imgbox" [src]="img">
 <br/>
 <span>{{img}}</span>
 
